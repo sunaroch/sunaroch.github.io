@@ -13,7 +13,8 @@ As stated similarly in my blog post, the technical aspects of this installation 
 9. Hang up the popsicle stick in a ceiling vent alongside other envelopes for full effect
 10. Enjoy your installation!
 
-
+![image2](https://github.com/sunaroch/sunaroch.github.io/assets/100099250/a121643d-9080-493e-8625-f00eeb180689)
+![image1](https://github.com/sunaroch/sunaroch.github.io/assets/100099250/f617cc94-1723-4196-83fa-710bfe324ff8)
 ![IMG_5120](https://github.com/sunaroch/sunaroch.github.io/assets/100099250/408eae8a-d5d6-4941-9253-1d5f913cc833)
 ![72954751781__D1CC1C0A-2A82-4B99-BC87-36E4AA800BC7](https://github.com/sunaroch/sunaroch.github.io/assets/100099250/a0c4db53-ec63-4c22-bc83-b803d66a588f)
 ![image4](https://github.com/sunaroch/sunaroch.github.io/assets/100099250/72cb49a9-f4b7-4836-a1fc-f1d61e87c43f)
