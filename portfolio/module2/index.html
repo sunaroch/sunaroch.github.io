@@ -27,7 +27,14 @@
     <p>My goal for this module was to create an instrument using MaxMSP. I knew that I wanted a potentiometer to affect frequency, and a button to turn the instrument on and off. This was a very basic implementation that I am prepared to build on at a later date. I hope you enjoy my little instrument! 
 </p>
 
-    <figure>
+      <p>The primary hardware function (and the most difficult part, in my opinion) is reading the values from the button and the potentiometer, and sending an OSC message to MaxMSP with a python backend. Once I had these values in MaxMSP, I had full creative freedom. </p>
+
+      <p>I wanted to create a bright and interesting sound, so I added two sine waves together with an added delay. One was a mapped value from 0 to 1024, and the other was a mapped value from 256 to 0. After adding the delay, I was happy with the sound I had created. </p>
+
+    <p>In order to turn the button into an on/off switch,  I selected only the 1 values from the button, and loaded that into a bang and then into a toggle object. 
+</p>
+      
+      <figure>
         <img src="image1.png" width="300" height="200">
         <figcaption>Diagram of the Wiring of Hardware. Includes ESP32, breadboard, wires, button, and potentiometer.</figcaption>
     </figure>
