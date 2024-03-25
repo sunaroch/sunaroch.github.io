@@ -18,6 +18,8 @@ I then created a Max patch where I received these OSC messages, and used the val
 
 Once I had all the mechanics working, I then created an enclosure for my instrument. I named it “Sun Synth”. I hope you enjoy!
 
+Links to code, more pictures and demo video located on https://sunaroch.github.io/portfolio/module2/
+
 <img width="417" alt="image1" src="https://github.com/sunaroch/sunaroch.github.io/assets/100099250/2151d908-3ef0-4df0-ba2f-5c7674737fe3">
 <img width="898" alt="image2" src="https://github.com/sunaroch/sunaroch.github.io/assets/100099250/83686db6-ead4-4bf3-ba3f-529fce16f089">
 
