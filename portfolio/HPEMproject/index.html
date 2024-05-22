@@ -4,25 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detroit Techno Meets Live Coding</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #0073e6;
+        }
+        p {
+            margin: 20px 0;
+        }
+        video, audio {
+            display: block;
+            margin: 20px auto;
+        }
+        h2 {
+            color: #0073e6;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <h1>Detroit Techno Meets Live Coding</h1>
-    <p>
-        One of my greatest passions is exploring the potential intersections between computer
-        science and music. Thus, after learning about Detroit Techno in a class called "The History and Practice of 
-        Electronic Music, I was inspired to create my own rendition, but with a twist. For the drums, I utilized Sonic Pi,
-        a programming language designed for live coding. 
-    </p>
-    
-    <video width="640" height="360" controls>
-        <source src="Starting_Live_Coding.mov" type="video/quicktime">
-        Your browser does not support the video tag.
-    </video>
+    <div class="container">
+        <h1>Detroit Techno Meets Live Coding</h1>
+        <p>
+            One of my greatest passions is exploring the potential intersections between computer science and music. 
+            After learning about Detroit Techno in a class called "The History and Practice of Electronic Music," I was 
+            inspired to create my own rendition, but with a twist. For the drums, I utilized Sonic Pi, a programming 
+            language designed for live coding.
+        </p>
+        
+        <video width="640" height="360" controls>
+            <source src="Starting_Live_Coding.mov" type="video/quicktime">
+            Your browser does not support the video tag.
+        </video>
 
-    <h2>Final Product</h2>
-    <audio controls>
-        <source src="DTfinaltrack.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
+        <h2>Final Product</h2>
+        <audio controls>
+            <source src="DTfinaltrack.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
 </body>
 </html>
+
