@@ -1,81 +1,71 @@
 <!doctype html>
 <html lang="en">
 <html>
-  <head>
-    <title>Sun Aroch</title>
+<head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ralewa$
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sun Synth</title>
     <style>
-        body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
-        .w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
-        .w3-third img:hover{opacity: 1}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
     </style>
-  </head>
-<body class="w3-light-grey w3-content" style="max-width:1600px">
-                                                               
-<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
-  <h3 class="w3-padding-64 w3-center"><b>SUN<br>AROCH</b></h3>
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a> 
-  <a href="#compsci" onclick="w3_close()" class="w3-bar-item w3-button">COMPUTER SCIENCE</a>
-  <a href="#music" onclick="w3_close()" class="w3-bar-item w3-button">MUSIC</a>
-</nav>
-
-<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
-  <span class="w3-left w3-padding">SUN AROCH</span>
-  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
-</header>
-
-<div class="w3-main" style="margin-left:300px">
-<div class="w3-row">
-    <div class="w3-third">
-      <img src="/images/fullbody.jpeg" style="width:100%">
-    </div>
-    <div class="w3-third">
-      <img src="/images/sky.jpeg" style="width:100%">
-    </div>
-    <div class="w3-third">
-      <img src="/images/selfie.jpeg" style="width:100%">
-</div>
-
-                                               
-<div class="w3-container w3-light-grey w3-center w3-text-dark-grey w3-padding-32" id="about">
-    <br><br><h4><b>About Me</b></h4>
-    <div class="w3-content w3-justify" style="max-width:600px">
-      <p>Welcome to my website! I'm Sun Aroch, a New York City-based senior at Barnard College, 
-      majoring in computer science. As a software developer and musician, I am constantly exploring
-      the intriguing intersections of technology and music. Through playing both drums and guitar, 
-      music has always been an integral part of my life. I also thrive in the world of programming, with 
-      experience in languages such as Java, C, Python, HTML, and Sonic Pi. This unique blend of technical
-      skills and artistic sensibilities allows me to create captivating and innovative experiences. 
-      Apart from my love for computer science and music, I also find inspiration in the realm of fashion
-      and modeling. New York City's vibrant environment serves as a constant source of creativity and 
-      motivation for me. Join me on this journey as I strive to make meaningful contributions and embrace
-      the exciting possibilities that lie ahead.
-      </p>
-      <p>email: arochsun@gmail.com</p>
-  </div>
-</div>
-
-<div class="w3-container w3-light-grey w3-center w3-text-dark-grey w3-padding-32" id="compsci">
-    <h4><b>Computer Science</b></h4>
-  <div class="w3-content w3-justify" style="max-width:600px">
-    <h5>Here are some projects that I have worked on:</h5>
-    <li><a href=https://abclili123.github.io/comp-sound-final/>An Exploration of Improvisation</a> - My peer, Lili, and I collaborated
-  on a final project for our class: Computational Sound. We decided to explore the concept of automated composition and 
-  improvisation using majenta.js and cellular automata. Feel free to experiment with your own improvisations and ideas upon 
-  clicking the link! You can also read more about this project in the blog post on the top left corner the website.</li>
-  </div>
-</div>
-
-<div class="w3-container w3-light-grey w3-center w3-text-dark-grey w3-padding-32" id="music">
-    <h4><b>Music</b></h4>
+</head>
+  <body>
+    <h1>Sun's Module 2:</h1>
+    <h2>Sun Synth!</h2>
     
-</div>
-  
-</div>
-                                                                                  
-</div>
+    <video width="640" height="360" controls>
+        <source src="mod2demo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <p>My goal for this project was to create an instrument using MaxMSP. I knew that I wanted a potentiometer to affect frequency, and a button to turn the instrument on and off.  
+</p>
 
-</html>
+      <p>The primary hardware function (and the most difficult part, in my opinion) is reading the values from the button and the potentiometer, and sending an OSC message to MaxMSP with a python backend. Once I had these values in MaxMSP, I had full creative freedom. </p>
+
+      <p>I wanted to create a bright and interesting sound, so I added two sine waves together with an added delay. One was a mapped value from 0 to 1024, and the other was a mapped value from 256 to 0. After adding the delay, I was happy with the sound I had created. </p>
+
+    <p>In order to turn the button into an on/off switch,  I selected only the 1 values from the button, and loaded that into a bang and then into a toggle object. 
+</p>
+      
+      <figure>
+        <img src="image1.png" width="300" height="200">
+        <figcaption>Diagram of the Wiring of Hardware. Includes ESP32, breadboard, wires, button, and potentiometer.</figcaption>
+    </figure>
+    <figure>
+        <img src="image6.jpeg" width="300" height="200">
+        <figcaption>A picture of the wiring for the potentiometer. Notice how the wires are soldered to the potentiometer for more robust connection.</figcaption>
+    </figure>
+    <figure>
+        <img src="image2.png" width="500" height="500">
+        <figcaption>A screenshot of Sun's MaxMSP patch.</figcaption>
+    </figure>
+    <figure>
+        <img src="image3.jpeg" width="300" height="200">
+        <figcaption>Placing the hardware in its box, making sure only desired pieces are reachable by the user.</figcaption>
+    </figure>
+
+    <p></p>
+
+    <figure>
+        <img src="image4.jpeg" width="300" height="200">
+        <figcaption>The undecorated box.</figcaption>
+    </figure>
+    <figure>
+        <img src="image5.jpeg" width="500" height="500">
+        <figcaption>Decorated Instrument!</figcaption>
+    </figure>
+
+    <p>Here is a link to the Arduino code: <a href="https://github.com/sunaroch/sunaroch.github.io/blob/main/portfolio/module2/project.ino">Link to Arduino Code</a></p>
+    <p>Here is a link to the Python code: <a href="https://github.com/sunaroch/sunaroch.github.io/blob/main/portfolio/module2/mod2.py">Link to Python Code</a></p>
+    <p>Here is a link further technical documentation, and how you can build this yourself!: <a href="https://github.com/sunaroch/sunaroch.github.io/blob/main/portfolio/module2/README.md">Link to README</a></p>
+
+  </body>
+</html>  
+
