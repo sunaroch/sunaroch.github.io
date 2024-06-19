@@ -3,39 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Misc. Pieces</title>
+    <title>Miscellaneous Music</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400&display=swap');
+
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+            background-color: black;
+            color: #FF69B4; /* Neon pink color */
+            font-family: 'Roboto', sans-serif;
             margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
         }
         .container {
-            width: 100%;
+            width: 90%;
+            max-width: 800px;
             margin: auto;
-            overflow: hidden;
             padding: 20px;
-            background: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+            background: black;
+            box-shadow: 0 0 10px rgba(255, 105, 180, 0.5);
+            border: 2px solid #FF69B4; /* Neon pink border */
         }
-        h1 {
+        h1, h2 {
+            font-family: 'Raleway', sans-serif;
             text-align: center;
-            color: #000000;
-            font-weight: bold;
+            color: #FF69B4; /* Neon pink color */
         }
         p {
             margin: 20px 0;
+            color: #FF69B4; /* Neon pink color */
         }
         video, audio {
             display: block;
             margin: 20px auto;
-        }
-        h2 {
-            color: #000000;
-            text-align: center;
+            border: 2px solid #FF69B4; /* Neon pink border */
         }
     </style>
 </head>
@@ -65,13 +68,12 @@
             Your browser does not support the audio element.
         </audio>
 
-        <p> 
-            Detroit Techno Meets Live Coding: After learning about Detroit Techno in a class, I was 
+        <p>Detroit Techno Meets Live Coding: After learning about Detroit Techno in a class, I was 
             inspired to create my own rendition, but with a twist. For the drums, I utilized Sonic Pi, a programming 
             language designed for live coding. Using these drums, I built and mixed the rest of the track using Logic Pro X.
         </p>
         
-        <video width="240" height="160" controls>
+        <video width="320" height="240" controls>
             <source src="Starting_Live_Coding.mov" type="video/quicktime">
             Your browser does not support the video tag.
         </video>
@@ -82,4 +84,3 @@
     </div>
 </body>
 </html>
-
