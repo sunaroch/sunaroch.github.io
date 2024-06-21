@@ -102,6 +102,40 @@
         a:hover {
             text-decoration: underline;
         }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: repeat(6, 1fr); /* Reduce columns for smaller screens */
+                padding: 10px;
+            }
+            .portfolio-item {
+                grid-column: span 6; /* Each item takes full width on smaller screens */
+            }
+            .portfolio-item h3 {
+                font-size: 1em; /* Adjust font size for smaller screens */
+            }
+            .home-button {
+                font-size: 0.8em;
+                padding: 5px 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                grid-template-columns: repeat(4, 1fr); /* Further reduce columns for very small screens */
+            }
+            .portfolio-item {
+                grid-column: span 4; /* Each item takes full width on very small screens */
+            }
+            .portfolio-item h3 {
+                font-size: 0.9em; /* Adjust font size for very small screens */
+            }
+            .home-button {
+                font-size: 0.7em;
+                padding: 5px;
+            }
+        }
     </style>
 </head>
 <body>
