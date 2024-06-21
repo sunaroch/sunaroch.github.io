@@ -10,13 +10,14 @@
 
         body {
             background-color: black;
-            color: neon-pink;
+            color: #FF69B4; /* Neon pink color */
             font-family: 'Arial', sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
+            position: relative; /* Ensure absolute positioning works correctly */
         }
         .container {
             text-align: center;
@@ -46,6 +47,7 @@
             cursor: pointer;
             text-decoration: none;
             text-align: center;
+            z-index: 1000; /* Ensure the button is always on top */
         }
         .home-button:hover {
             background-color: #ff85c1; /* Lighter pink on hover */
