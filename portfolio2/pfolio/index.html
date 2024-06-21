@@ -13,13 +13,10 @@
             color: #FF69B4; /* Neon pink color */
             font-family: 'Roboto', sans-serif;
             margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
             padding: 20px;
             box-sizing: border-box;
             position: relative;
+            overflow-x: hidden; /* Prevent horizontal scroll */
         }
         .container {
             max-width: 1200px;
@@ -103,7 +100,7 @@
             text-decoration: underline;
         }
 
-        /* Responsive Design */
+        /* Minimal adjustments for better readability on smaller screens */
         @media (max-width: 768px) {
             .container {
                 grid-template-columns: repeat(6, 1fr); /* Reduce columns for smaller screens */
