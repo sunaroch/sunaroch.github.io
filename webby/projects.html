@@ -23,12 +23,13 @@
             background-image: url('projects.png'); /* Replace with the correct image path */
             background-size: cover;
             background-position: center;
-            padding: 20px; /* Adjusted padding */
+            padding: 50px;
+            box-sizing: border-box;
         }
 
         .menu {
             font-size: 18px;
-            line-height: .8;
+            line-height: 0.8;
             margin-left: 50px;
             margin-top: 50px;
         }
@@ -49,31 +50,31 @@
         .projects {
             margin-left: 50px;
             display: flex;
-            justify-content: flex-start;
+            flex-direction: row;
             align-items: flex-start;
-            margin-top: 100px; /* Adjusted margin to position the project cards correctly */
-            gap: 50px; /* Spacing between project cards */
+            margin-top: 100px;
+            gap: 50px;
         }
 
         .project {
             display: flex;
             flex-direction: column;
-            align-items: flex-start; /* Align items to the left */
+            align-items: flex-start;
         }
 
+        .project iframe,
         .project video {
+            object-fit: cover;
             width: 300px;
             height: 300px;
             background-color: rgba(255, 255, 255, 0.1);
-            object-fit: cover;
         }
 
         .project-info {
             margin-top: 5px;
             color: #fff;
             font-family: 'Roboto', sans-serif;
-            text-align: left; /* Left-align the text */
-            width: 300px; /* Match the width of the video for alignment */
+            text-align: left;
         }
 
         .project-info h3 {
@@ -87,6 +88,40 @@
             font-size: 14px;
             font-family: 'Roboto', sans-serif;
         }
+
+        /* Media Queries for Mobile Layout */
+        @media (max-width: 767px) {
+            .menu {
+                font-size: 18px;
+                line-height: 0.8;
+                margin-left: 0px;
+                margin-top: 0px;
+             }
+            .projects {
+                align-items: center;
+                margin-left: 0; /* Remove left margin on mobile */
+                margin-top: 50px;
+                gap: 20px;
+            }
+
+            .project iframe,
+            .project video {
+                width: 135px; /* Make the video take most of the screen width */
+                height: 135px;
+            }
+
+            .project-info {
+                text-align: left; /* Center the text */
+            }
+
+            .project-info h3 {
+                font-size: 15px; /* Slightly smaller font size for mobile */
+            }
+
+            .project-info p {
+                font-size: 14px; /* Slightly smaller font size for mobile */
+            }
+        }
     </style>
 </head>
 <body>
@@ -99,21 +134,19 @@
         </div>
         <div class="projects">
             <div class="project">
-                <iframe width="300" height="300" src="https://www.youtube.com/embed/vRzCl3sfC2g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="300" height="200" src="https://www.youtube.com/embed/vRzCl3sfC2g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <div class="project-info">
                     <h3>WHAA + Visualizer</h3>
                     <p>2024</p>
                 </div>
             </div>
             <div class="project">
-                <video controls>
-                    <source src="sunSynthcopy.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+                <iframe width="300" height="200" src="https://www.youtube.com/embed/79pXjRuY4Ow" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <div class="project-info">
-                    <h3>Sun Synth</h3>
+                    <h3>sunSynth!</h3>
                     <p>2024</p>
                 </div>
+            </div>
             </div>
         </div>
     </div>
