@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sun Aroch - Contact</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Georgia:wght@400&family=Roboto:wght@400;700&display=swap');
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: 'Roboto', sans-serif;
+            color: #fff;
+            font-weight: 300;
+        }
+
+        .container {
+            position: relative;
+            height: 100vh;
+            background-image: url('contact.png'); /* Replace with the correct image path */
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+        }
+
+        .menu {
+            font-size: 18px;
+            line-height: 0.8; /* Adjusted line-height for the top left column */
+            margin-left: 50px;
+            margin-top: 50px;
+        }
+
+        .menu a {
+            display: block;
+            text-decoration: none;
+            color: #fff;
+            margin-bottom: 10px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .menu a.active {
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .contact-info {
+            position: absolute;
+            right: 250px;
+            top: 25%;
+            text-align: left;
+            font-family: 'Georgia', serif;
+            font-size: 24px;
+        }
+
+        .contact-info a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <a href="index.html">home</a>
+            <a href="projects.html">projects</a>
+            <a href="about.html">about me</a>
+            <a href="contact.html" class="active">contact</a>
+        </div>
+        <div class="contact-info">
+            <a href="mailto:arochsun@gmail.com">email: arochsun@gmail.com</a>
+            <a href="https://www.linkedin.com/in/sunaroch" target="_blank">linkedin</a>
+            <a href="https://www.instagram.com/sunaroch" target="_blank">instagram</a>
+            <a href="SUNAROCH_RESUME.pdf" target="_blank">resume</a>
+        </div>
+    </div>
+</body>
+</html>

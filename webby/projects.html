@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sun Aroch - Projects</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Georgia:wght@400&family=Roboto:wght@400;700&display=swap');
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: 'Roboto', sans-serif;
+            color: #fff;
+            font-weight: 300;
+        }
+
+        .container {
+            position: relative;
+            height: 100vh;
+            background-image: url('projects.png'); /* Replace with the correct image path */
+            background-size: cover;
+            background-position: center;
+            padding: 20px; /* Adjusted padding */
+        }
+
+        .menu {
+            font-size: 18px;
+            line-height: .8;
+            margin-left: 50px;
+            margin-top: 50px;
+        }
+
+        .menu a {
+            display: block;
+            text-decoration: none;
+            color: #fff;
+            margin-bottom: 10px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .menu a.active {
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .projects {
+            margin-left: 50px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-top: 100px; /* Adjusted margin to position the project cards correctly */
+            gap: 50px; /* Spacing between project cards */
+        }
+
+        .project {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; /* Align items to the left */
+        }
+
+        .project video {
+            width: 300px;
+            height: 300px;
+            background-color: rgba(255, 255, 255, 0.1);
+            object-fit: cover;
+        }
+
+        .project-info {
+            margin-top: 5px;
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+            text-align: left; /* Left-align the text */
+            width: 300px; /* Match the width of the video for alignment */
+        }
+
+        .project-info h3 {
+            margin: 0;
+            font-size: 20px;
+            line-height: 1.2;
+        }
+
+        .project-info p {
+            margin: 0;
+            font-size: 14px;
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <a href="index.html">home</a>
+            <a href="projects.html" class="active">projects</a>
+            <a href="about.html">about me</a>
+            <a href="contact.html">contact</a>
+        </div>
+        <div class="projects">
+            <div class="project">
+                <iframe width="300" height="300" src="https://www.youtube.com/embed/vRzCl3sfC2g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="project-info">
+                    <h3>WHAA + Visualizer</h3>
+                    <p>2024</p>
+                </div>
+            </div>
+            <div class="project">
+                <video controls>
+                    <source src="sunSynthcopy.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="project-info">
+                    <h3>Sun Synth</h3>
+                    <p>2024</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

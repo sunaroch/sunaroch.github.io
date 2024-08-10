@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sun Aroch - About Me</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Georgia:wght@400&family=Roboto:wght@400;700&display=swap');
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: 'Roboto', sans-serif;
+            color: #fff;
+            font-weight: 300;
+        }
+
+        .container {
+            position: relative;
+            height: 100vh;
+            background-image: url('about.png'); /* Replace with the correct image path */
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+        }
+
+        .menu {
+            font-size: 18px;
+            line-height: 0.8; /* Adjusted line-height for the top left column */
+            margin-left: 50px;
+            margin-top: 50px;
+        }
+
+        .menu a {
+            display: block;
+            text-decoration: none;
+            color: #fff;
+            margin-bottom: 10px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .menu a.active {
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .content {
+            font-size: 20px;
+            margin-left: 50px;
+            margin-top: 50px;
+            max-width: 500px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .skills {
+            font-size: 18px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .skills div {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <a href="index.html">home</a>
+            <a href="projects.html">projects</a>
+            <a href="about.html" class="active">about me</a>
+            <a href="contact.html">contact</a>
+        </div>
+        <div class="content">
+            <p>My name is Sun Aroch, and I am a New York City based programmer and musician. I recently graduated from Barnard College of Columbia University with a degree in computer science, and I am constantly exploring the intersections between technology and the arts. The arts have always been an integral part of my life, as I have been playing instruments and producing music since I was a child. I also thrive in the world of programming, with experience in languages such as C++, Python, Java, and HTML. This unique blend of technical skills and artistic sensibilities allows me to create captivating and innovative experiences.</p>
+            <div class="skills">
+                <div>
+                    <p>Programming Languages:<br>
+                    C++<br>
+                    Java<br>
+                    Python<br>
+                    HTML/JavaScript</p>
+                </div>
+                <div>
+                    <p>Software Proficiencies:<br>
+                    MaxMSP<br>
+                    TouchDesigner<br>
+                    Sonic Pi<br>
+                    Ableton<br>
+                    Logic Pro X</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
