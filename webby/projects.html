@@ -65,8 +65,8 @@
         .project iframe,
         .project video {
             object-fit: cover;
-            width: 300px;
-            height: 300px;
+            width: 400px;
+            height: 400px;
             background-color: rgba(255, 255, 255, 0.1);
         }
 
@@ -79,14 +79,22 @@
 
         .project-info h3 {
             margin: 0;
-            font-size: 20px;
+            font-size: 18px;
             line-height: 1.2;
+            font-weight: normal;
         }
 
         .project-info p {
             margin: 0;
-            font-size: 14px;
+            font-size: 15px;
             font-family: 'Roboto', sans-serif;
+        }
+
+        .project-info p1 {
+            margin: 0;
+            font-size: 13px;
+            font-family: 'Roboto', sans-serif;
+            font-style: italic;
         }
 
         /* Media Queries for Mobile Layout */
@@ -121,6 +129,15 @@
             .project-info p {
                 font-size: 14px; /* Slightly smaller font size for mobile */
             }
+
+            .project-info p1 {
+                line-height: 12px; /* Adjusted line height */
+                margin: 0;
+                font-size: 10px;
+                font-family: 'Roboto', sans-serif;
+                font-style: italic;
+                display: block;
+            }
         }
     </style>
 </head>
@@ -138,6 +155,7 @@
                 <div class="project-info">
                     <h3>WHAA + Visualizer</h3>
                     <p>2024</p>
+                    <p1>created using TouchDesigner and Ableton Live</p1>
                 </div>
             </div>
             <div class="project">
@@ -145,6 +163,7 @@
                 <div class="project-info">
                     <h3>sunSynth!</h3>
                     <p>2024</p>
+                    <p1>made using MaxMSP, Python, the Arduino IDE, and an ESP32.</p1>
                 </div>
             </div>
             </div>
